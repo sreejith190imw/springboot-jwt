@@ -1,0 +1,25 @@
+#spring.application.name=jwtAuth
+#
+#spring.datasource.url=jdbc:mysql://localhost:3306/jwtAuth
+#spring.datasource.username=root
+#spring.datasource.password=sreejith
+
+spring:
+  application:
+    name: jwtAuth
+  
+  datasource:
+    url: jdbc:mysql://localhost:3306/jwtAuth
+    username: root
+    password: sreejith
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true 
+    database: mysql
+    datbase-platform: org.hibernate.dialect.MySQL5Dialect
